@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegbede Stephen - Frontend Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.0/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader">
+        <div class="loader-text">LOADING</div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">👨‍💻ES</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">Hello, I'm</span>
+              <span class="title-line highlight">Elegbede Stephen</span>
+              <span class="title-line" style="font-size: 40px; margin-top: 10px"
+                >Frontend Engineer</span
+              >
+            </h1>
+            <p class="hero-description">
+              Crafting beautiful, responsive, and user-friendly web experiences
+              with modern technologies.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="floating-elements">
+              <div class="floating-element" style="--delay: 0s">React</div>
+              <div class="floating-element" style="--delay: 0.5s">
+                JavaScript
+              </div>
+              <div class="floating-element" style="--delay: 1s">CSS</div>
+              <div class="floating-element" style="--delay: 1.5s">HTML</div>
+              <div class="floating-element" style="--delay: 2s">TypeScript</div>
+              <div class="floating-element" style="--delay: 2.5s">Vue</div>
+              <div class="floating-element" style="--delay: 3s">Tailwind</div>
+              <div class="floating-element" style="--delay: 3.5s">Git</div>
+              <div class="floating-element" style="--delay: 4s">GitHub</div>
+              <div class="floating-element" style="--delay: 4.5s">NextJS</div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-paragraph">
+              I'm a passionate frontend developer, excited about creating and
+              engaing user-friendly digital experiences. I specialize in modern
+              JavaScript frameworks and have a keen eye for design and user
+              experience.
+            </p>
+            <p class="about-paragraph">
+              I enjoy working with modern JavaScript frameworks and I'm
+              continuously improving my skills by building real-world projects,
+              contributing to open source projects, or sharing knowledge with
+              the developer community through blog posts and talks.
+            </p>
+            <div class="resume-download">
+              <button class="btn btn-resume" id="downloadResumeBtn">
+                <span class="resume-icon">📄</span>
+                <span class="resume-text">Download Resume</span>
+                <span class="resume-format">(PDF)</span>
+              </button>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-container">
+              <div class="image-placeholder">
+                <div class="profile-icon">👨‍💻</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Tools & Frameworks</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Vue.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 60%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Next.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Tailwind CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://steve-autohub.netlify.app" class="project-link">Live Demo</a>
+                  <a href="https://github.com/stevo1935/autohub" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                A  vehicle listing website that allows users to search for and view details of various vehicles, including cars, trucks, motorcycles, and bicycles. Provides a user-friendly interface for browsing and filtering vehicles based on different criteria such as category, make, model, and price..
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://steve-vue-todo.pipeops.net" class="project-link">Live Demo</a>
+                  <a href="https://github.com/stevo1935/todo-app" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Todo App</h3>
+              <p class="project-description">
+                A task manager with add/remove features and local storage persistence built in three different versions using Vue.js, React.js, and Next.js.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vue.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://eazy-bins.vercel.app" class="project-link">Live Demo</a>
+                  <a href="https://github.com/Horlanrewajucode/EazyBins" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Eazybin</h3>
+              <p class="project-description">
+                A mobile-first, web supported waste management platform that allows users to  manage, schedule and pickups. Users can create bins, add waste items to the bins, and view the status of the bins with route optimzation and task tracking.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Tailwindcss</span>
+                <span class="tech-tag">API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Let's work together</h3>
+            <p class="contact-description">
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question or just want to say hi, feel free to
+              reach out!
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span class="contact-icon">📧</span>
+                <span class="contact-text">elegbedestephen2@email.com</span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">📱</span>
+                <span class="contact-text">+234 8109528430</span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">📍</span>
+                <span class="contact-text">Abuja, Nigeria</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-input form-textarea"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2025 Elegbede Stephen. All rights reserved.</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
