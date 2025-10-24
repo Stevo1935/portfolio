@@ -279,18 +279,86 @@ document.head.appendChild(navStyle);
 
  document.getElementById('downloadResumeBtn').addEventListener('click', function() {
   const resumeContent = `
-    <!DOCTYPE html>
+     <!DOCTYPE html>
     <html>
     <head>
       <title>Elegbede Stephen - Resume</title>
       <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; border: 2px solid #ffd700; padding: 20px; border-radius: 20px; width: 800px; margin: 0 auto; }
-        .header { text-align: center; margin-bottom: 30px; }
-        .section { margin-bottom: 25px; }
-        .section h2 { color: #333; border-bottom: 2px solid #ffd700; padding-bottom: 5px; }
-        .contact-info { display: flex; justify-content: center; gap: 20px; margin: 10px 0; }
-        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill { background: #f0f0f0; padding: 5px 10px; border-radius: 15px; }
+        body {
+          font-family: 'Arial', sans-serif;
+          margin: 20px;
+          line-height: 1.4;
+          padding: 15px;
+          width: 700px;
+          margin: 0 auto;
+          box-sizing: border-box;
+        }
+        .header {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .header h1 {
+          font-size: 24px;
+          margin: 5px 0;
+        }
+        .header h3 {
+          font-size: 16px;
+          color: #333;
+          margin: 5px 0;
+        }
+        .contact-info {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          font-size: 12px;
+          margin: 5px 0;
+        }
+        .section {
+          margin-bottom: 15px;
+        }
+        .section h2 {
+          font-size: 16px;
+          color: #333;
+          border-bottom: 1px solid #ffd700;
+          padding-bottom: 3px;
+          margin-bottom: 8px;
+        }
+        .section h4 {
+          font-size: 14px;
+          margin: 5px 0 3px;
+        }
+        .section p {
+          font-size: 12px;
+          margin: 3px 0;
+        }
+        .skills {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        .skill {
+          background: #f0f0f0;
+          padding: 4px 8px;
+          border-radius: 12px;
+          font-size: 11px;
+        }
+        .experience-item, .project-item {
+          margin-bottom: 8px;
+        }
+        a {
+          color: #0066cc;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        @media print {
+          body {
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+          }
+        }
       </style>
     </head> 
     <body>
@@ -298,64 +366,80 @@ document.head.appendChild(navStyle);
         <h1>Elegbede Stephen</h1>
         <h3>Frontend Engineer</h3>
         <div class="contact-info">
-          <span>📧 elegbedestephen2@gmail.com@email.com</span>
+          <span>📧 elegbedestephen2@gmail.com</span>
           <span>📱 +234 8109528430</span>
           <span>📍 Abuja, Nigeria</span>
+          <span>🌐 <a href="https://github.com/stevo1935/portfolio">Portfolio</a></span>
         </div>
       </div>
       
       <div class="section">
         <h2>About</h2>
-        <p>I'm a passionate frontend developer, excited about creating and engaing user-friendly digital experiences. 
-            I specialize in modern JavaScript frameworks and have a keen eye for design and user experience.</p>
+        <p>Passionate frontend developer skilled in creating user-friendly digital experiences using React, TypeScript, and modern frameworks. Adept at collaborating with cross-functional teams to deliver intuitive solutions, with a strong focus on design, UX, and continuous learning.</p>
+      </div>
+      
+      <div class="section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h4>Frontend Engineer (Volunteer) | Visibuy</h4>
+          <p><em>2025 - Present</em></p>
+          <p>
+            - Developed responsive seller and buyer interfaces using React, ensuring mobile-first design for 90%+ device compatibility.<br>
+            - Integrated RESTful APIs for seamless verification workflows, reducing data fetch errors by 25%.<br>
+            - Collaborated with backend and product teams in bi-weekly sprints to enhance UI/UX, boosting user satisfaction. References available upon request.
+          </p>
+        </div>
       </div>
       
       <div class="section">
         <h2>Skills</h2>
+        <p><strong>Technical Proficiencies:</strong> Frontend Development, React, JavaScript, TypeScript, Vue.js, Next.js, Tailwind CSS, CSS (BEM), HTML, RESTful APIs, Git, GitHub</p>
+        <p><strong>Soft Skills:</strong> Collaboration, Problem-Solving, Attention to Detail</p>
         <div class="skills">
-          <span class="skill">React </span>
+          <span class="skill">React</span>
           <span class="skill">JavaScript</span>
-          <span class="skill">TypeScript </span>
+          <span class="skill">TypeScript</span>
           <span class="skill">CSS</span>
-          <span class="skill">Vue.js </span>
-          <span class="skill">Next.js </span>
-          <span class="skill">Tailwind CSS </span>
-          <span class="skill">Git </span>
-          <span class="skill">GitHub </span>
+          <span class="skill">Vue.js</span>
+          <span class="skill">Next.js</span>
+          <span class="skill">Tailwind CSS</span>
+          <span class="skill">Git</span>
+          <span class="skill">GitHub</span>
         </div>
       </div>
       
       <div class="section">
         <h2>Featured Projects</h2>
-        <h4>Portfolio Website</h4>
-        <p>Built a personal portfolio with responsive design, smooth animations, and interactive navigation.</p>
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-        <p> Github link: <a href="https://github.com/stevo1935/portfolio">https://github.com/stevo1935/portfolio</a></p>
-        
-        <h4>Todo App</h4>
-        <p>A task manager with add/remove features and local storage persistence built in three different versions using Vue.js, React.js, and Next.js..</p>
-        <p><strong>Technologies:</strong> React, Typescript,Next.js,CSS with BEM Tecnology</p>
-        <p> Github link: <a href="https://github.com/stevo1935/todo-app">https://github.com/stevo1935/todo-app</a></p>
-        
-        <h4>E-Commerce Platform</h4>
-        <p>A vehicle listing website that allows users to search for and view details of various vehicles, including cars, trucks, motorcycles, and bicycles.</p>
-        <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
-        <p> Github link: <a href="https://github.com/stevo1935/autohub">https://github.com/stevo1935/autohub</a></p>
-       
+        <div class="project-item">
+          <h4>Eazybin</h4>
+          <p>Developed a mobile-first waste management platform enabling users to manage, schedule, and track pickups. Implemented bin creation, waste item tracking, and route optimization features using React and Tailwind CSS.</p>
+          <p><strong>Technologies:</strong> React, Tailwind CSS, RESTful APIs</p>
+          <p><a href="https://github.com/Horlanrewajucode/EazyBins">github.com/stevo1935/eazybin</a> | <a href="https://eazy-bins.vercel.app">Live Demo</a> </p>
+        </div>
+        <div class="project-item">
+          <h4>Todo App</h4>
+          <p>Developed a task manager with Vue.js, React.js, and Next.js, implementing local storage and dynamic filtering for enhanced user interaction.</p>
+          <p><strong>Technologies:</strong> React, TypeScript, Next.js, CSS (BEM)</p>
+          <p><a href="https://github.com/stevo1935/todo-app">github.com/stevo1935/todo-app</a></p>
+        </div>
+        <div class="project-item">
+          <h4>E-Commerce Platform</h4>
+          <p>Created a vehicle listing website with dynamic search and detailed views, improving user navigation for 50+ vehicle listings.</p>
+          <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
+          <p><a href="https://github.com/stevo1935/autohub">github.com/stevo1935/autohub</a></p>
+        </div>
       </div>
+      
       <div class="section">
-        <h2>Education/Training</h2>
-        <h4>FreeCodeCamp - Responsive Web Design</h4>
-        <h4>Udemy - The Complete Web Developer Course</h4>
-        <h4>Altschool Africa - Frontend Web Development</h4>
-      </div>
-      <div class="section">
-       <h2>Reference</h2>
-       <p>Available upon request.</p>
+        <h2>Certifications</h2>
+        <p><strong>FreeCodeCamp</strong> - Responsive Web Design, 2024</p>
+        <p><strong>Udemy</strong> - The Complete Web Developer Course, 2024</p>
+        <p><strong>Altschool Africa</strong> - Frontend Web Development, 2025</p>
       </div>
     </body>
     </html>
   `;
+
 
   
   const blob = new Blob([resumeContent], { type: 'text/html' });
